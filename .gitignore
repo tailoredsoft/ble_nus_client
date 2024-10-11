@@ -1,0 +1,14 @@
+/*.uwc
+*/*.uwc
+*/*/*.uwc
+
+/*.tws
+*/*.tws
+*/*/*.tws
+
+/*.aut.txt
+*/*.aut.txt
+*/*/*.aut.txt
+
+*.pdf
+automation*.txt
