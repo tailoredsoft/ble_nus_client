@@ -39,7 +39,7 @@
 // -------------------
 // ATinterface Library Version
 // -------------------
-#define LibVer                 "3.00"  //Library version  (ATI23)
+#define LibVer                 "3.10"  //Library version  (ATI23)
 //
 //******************************************************************************
 // Compiler/Debug options
@@ -78,6 +78,9 @@
 // -------------------
 // Application History
 // -------------------
+//
+//  3.10
+//    * Added AT+STOP command
 //
 //  3.02
 //    * Added LESC OOB pairing capability
@@ -4258,6 +4261,9 @@ function _atPLUS(byref cmdStr$, byref rspBuf$)
 
   elseif strcmp(tmp$,"sfmt")==0 then
     rc=_atPlusM0O1(cmdStr$,CMD_MO01_SFMT,0,0,1)
+
+  elseif strcmp(tmp$,"stop")==0 then
+    stop
 
 //  --------------------------------------------------
 // Following only to be added when custom descriptor requirement
